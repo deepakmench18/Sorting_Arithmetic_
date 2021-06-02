@@ -1,4 +1,4 @@
-echo "Enter space seperated a, b and c"
+echo "Enter Number a, b and c"
 read a b c
 cnt=0
 declare -A res
@@ -17,7 +17,7 @@ for (( i=0;i<4;i++ ))
 do
    for (( j=$i+1;j<4;j++ ))
    do
-      if [ "${arr[$i]}" -lt "${arr[$j]}" ]
+      if [ "${arr[$i]}" -gt "${arr[$j]}" ]
        then
            temp=${arr[$i]}
            arr[$i]=${arr[$j]}
@@ -25,4 +25,4 @@ do
        fi
     done
 done
-echo "Array in decending order= ${arr[@]}"
+echo "Array in Ascending order= ${arr[@]}"
