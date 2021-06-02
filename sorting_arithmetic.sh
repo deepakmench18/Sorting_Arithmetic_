@@ -1,2 +1,6 @@
-f1=$(($a%$b+$c))
-echo "$a%$b+$c= $f1"
+declare -A res
+res['a+b*c']=$(($a+$b*$c))
+res['c+a/b']=$(($c+$a/$b))
+res['a*b+c']=$(($a*$b+$c))
+res['a%b+c']=$(($a%$b+$c))
+echo "Results of computation =${res[*]}"
