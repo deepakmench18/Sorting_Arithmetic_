@@ -1,4 +1,4 @@
-echo "Enter space seperated a, b and c"
+echo "Enter Number a, b and c"
 read a b c
 cnt=0
 declare -A res
